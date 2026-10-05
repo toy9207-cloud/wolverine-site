@@ -1,8 +1,9 @@
 # Wolverrine — stallion site
 
-Static one-pager for **Wolverrine** (2020 AQHA buckskin, The Goodbye Lane ×
-Rosas Cantina CC). Owned by Mill Iron Livestock. Standing ICSI-only at Solo
-Select Horses, Gainesville, Texas.
+Static one-pager for **Wolverrine** — 2020 buckskin stallion, 15.1 HH,
+6-panel N/N, $115,000 LTE. The Goodbye Lane × Rosas Cantina CC. Owned by Mill
+Iron Livestock (Del & Tyson Bieleny, Czar, Alberta). Standing at Solo Select
+Horses, Gainesville, Texas — ICSI contracts open, frozen/cooled by waitlist.
 
 No build step. Open `index.html` or serve the folder.
 
@@ -55,6 +56,10 @@ environment. They are flagged inline with `VERIFY:` comments:
 grep -n "VERIFY:" index.html
 ```
 
-Also outstanding: 2026 incentive nominations, Mill Iron's phone and inbox, the
-Formspree form ID in `index.html`, the fallback inbox in `js/main.js`, and
-photographer permissions for every third-party image.
+Still outstanding: which season the fees apply to, the as-of date for the
+$115,000 LTE, the 2026 Young Guns buckle result, the real 5-generation pedigree,
+the Formspree form ID in `index.html`, and photographer permissions.
+
+**Do not publish the three action photos in `docs/source-images/`.** They carry
+a "LexiSmith Media — social media use only" watermark and are not licensed for
+web use. They are held there unused and are not referenced by the site.
