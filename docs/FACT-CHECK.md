@@ -30,11 +30,8 @@ Futurity Champion, 2025 Diamond Classic Reserve Champion); Im On Firre $37,950
 
 ## Still open — resolve before publish
 
-1. **Which breeding season do the fees apply to?** The ad carries no year and it
-   is October 2026, so these are probably 2027 terms. A fee published without a
-   season is a dispute waiting to happen. Flagged inline in the fee box.
-2. **As-of date for the $115,000 LTE.** Earnings figures go stale; date it.
-3. **The 2026 Young Guns League buckle** in the photo folder — which horse won
+1. **As-of date for the $115,000 LTE.** Earnings figures go stale; date it.
+2. **The 2026 Young Guns League buckle** now in the gallery — which horse won
    it, in what class, for how much? Currently a placeholder row in the record.
 4. **Jaguarr's status.** An earlier source implied he has died; his own 2026 ad
    does not say so and the site now uses present tense. Confirm.
@@ -44,26 +41,36 @@ Futurity Champion, 2025 Diamond Classic Reserve Champion); Im On Firre $37,950
 6. **Does Mill Iron own Solo Select?** One snippet implied the Bielenys own Solo
    Select. Mill Iron is in Czar, Alberta; Solo Select is in Gainesville, Texas.
    Probably a search-engine conflation. Confirm the real relationship.
-7. **Pedigree generation 3 contains placeholder ancestor names** for Lanes
-   Leinster's, Swift Goodbye's and Dash Ta Vanila's parents. Pull the real
-   five-generation from AQHA and replace.
-8. **The pull quote in "The Horse" is unattributed house copy.** Replace with a
+7. **The pull quote in "The Horse" is unattributed house copy.** Replace with a
    real quote from Del or Tyson Bieleny, or delete it. Do not publish an
    invented quote.
-9. Formspree form ID in `index.html` is still a placeholder; the mailto fallback
+8. Formspree form ID in `index.html` is still a placeholder; the mailto fallback
    now points at millironlivestock@gmail.com.
 
-## Photo rights — read this one
+## Resolved
 
-Three action photos supplied in the folder are watermarked
-**"LEXISMITH MEDIA — SOCIAL MEDIA USE ONLY."** That is an explicit license
-limit, and a website is not social media. They are being held unused in
-`docs/source-images/` and are **not** referenced by the site. Either license
-them from LexiSmith Media for web use or leave them out.
+- **2027 fees confirmed by the client:** $2,000 USD ICSI, $3,500 frozen. Now on
+  the site, labelled 2027.
+- **Pedigree is real.** Three generations, sourced by search since every
+  pedigree database is blocked from this environment:
+  The Goodbye Lane (Lanes Leinster × Swift Goodbye) over Rosas Cantina CC
+  (Corona Cartel × Dash Ta Vanila). Lanes Leinster is by Leinster House (TB) out
+  of Lanes Star Miss; Swift Goodbye is by Dash Ta Fame out of Fiesta On The Fly;
+  Corona Cartel is by Holland Ease out of Corona Chick; Dash Ta Vanila is a 2005
+  palomino by Dash Ta Fame out of SX Frenchmans Vanila. Spot-check the two
+  fourth-dam names against the papers.
+- **Action photos cleared by the client** and placed in the gallery.
 
-Those three photos also show a dark-coated horse. Wolverrine is a buckskin, so
-they are not obviously him — identify the horse and rider before captioning
-anything.
+## Photo notes
 
-Everything else still needs written permission per photographer, including any
-image of Rosa or The Goodbye Lane.
+The LexiSmith Media watermark on gallery images 01–03 reads "SOCIAL MEDIA USE
+ONLY" and is legible at full size on the page. Rights are cleared, but the
+visible stamp still reads as unlicensed to anyone who looks. Ask LexiSmith for
+clean web-res files, or crop below the watermark.
+
+Images 01–03 show a dark-coated horse and Wolverrine is a buckskin, so their alt
+text does not name him. Identify the horse and rider and the alt text can be
+filled in — it is the one SEO hole left in the gallery.
+
+Images of Rosa or The Goodbye Lane still need permission from their
+photographers.

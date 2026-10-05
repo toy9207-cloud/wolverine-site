@@ -23,7 +23,7 @@ Match the name and it appears — no code changes needed.
 | `assets/images/rosas-cantina-cc.jpg` | His Dam | vertical, 4:5 |
 | `assets/images/the-goodbye-lane.jpg` | His Sire | vertical, 4:5 |
 | `assets/images/mill-iron-ranch.jpg` | Owners | horizontal, 16:10 |
-| `assets/images/gallery/01.jpg` … `09.jpg` | Gallery | square |
+| `assets/images/gallery/01.jpg` … `09.jpg` | Gallery | square (01–04 filled) |
 | `assets/images/wolverrine-og.jpg` | Social share card | 1200×630 |
 | `assets/logos/mill-iron-livestock.png` | Header lockup | transparent PNG/SVG |
 | `assets/logos/favicon.png` | Browser tab | 512×512 |
@@ -56,10 +56,8 @@ environment. They are flagged inline with `VERIFY:` comments:
 grep -n "VERIFY:" index.html
 ```
 
-Still outstanding: which season the fees apply to, the as-of date for the
-$115,000 LTE, the 2026 Young Guns buckle result, the real 5-generation pedigree,
-the Formspree form ID in `index.html`, and photographer permissions.
+Still outstanding: the as-of date for the $115,000 LTE, the 2026 Young Guns
+buckle result, a real conformation shot for the hero slot, alt text naming the
+horse in gallery images 01–03, and the Formspree form ID in `index.html`.
 
-**Do not publish the three action photos in `docs/source-images/`.** They carry
-a "LexiSmith Media — social media use only" watermark and are not licensed for
-web use. They are held there unused and are not referenced by the site.
+2027 fees are live on the page: $2,000 USD ICSI, $3,500 frozen (waitlist).
