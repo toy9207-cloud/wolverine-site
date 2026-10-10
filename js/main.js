@@ -17,23 +17,18 @@
      photo exists at that path, we hide the broken <img> and leave the
      placeholder showing the exact filename to drop in.
   ------------------------------------------------------------------ */
-  function settle(shot, img) {
-    if (img.naturalWidth > 0) {
-      shot.classList.add('is-loaded');
-    } else {
-      img.style.display = 'none';
-    }
-  }
+  function markLoaded(shot) { shot.classList.add('is-loaded'); }
+  function markFailed(img)   { img.style.display = 'none'; }
 
   document.querySelectorAll('[data-shot]').forEach(function (shot) {
     var img = shot.querySelector('img');
     if (!img) return;
-    if (img.complete) {
-      settle(shot, img);
-    } else {
-      img.addEventListener('load', function () { settle(shot, img); });
-      img.addEventListener('error', function () { img.style.display = 'none'; });
-    }
+    // A lazy <img> reports complete === true before it has loaded, so a width
+    // of 0 is only a real failure once the error event has actually fired.
+    // Hiding it early would also cancel the lazy load.
+    if (img.complete && img.naturalWidth > 0) { markLoaded(shot); return; }
+    img.addEventListener('load',  function () { markLoaded(shot); });
+    img.addEventListener('error', function () { markFailed(img); });
   });
 
   /* ---- Waitlist + ICSI buttons ----
