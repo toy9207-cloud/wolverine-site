@@ -16,7 +16,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500..900;1,6..96,500..700&family=Inter:wght@300;350;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="icon" href="assets/logos/favicon.png">
 </head>
@@ -92,47 +92,21 @@
          loading="lazy">
   </figure>
 
-  <!-- DOSSIER -->
-  <aside class="dossier" aria-label="Wolverrine at a glance">
-    <div class="dossier__inner">
-      <div class="dossier__rail" aria-hidden="true"><span>Wolverrine &mdash; File</span></div>
-      <div class="dossier__grid">
-        <div class="dos">
-          <span class="dos__i">01</span>
-          <span class="dos__v">$115,000</span>
-          <span class="dos__k">Earned</span>
-          <span class="dos__note">his own arena record</span>
-        </div>
-        <div class="dos">
-          <span class="dos__i">02</span>
-          <span class="dos__v">$19M</span>
-          <span class="dos__k">Sire</span>
-          <span class="dos__note">The Goodbye Lane &middot; progeny</span>
-        </div>
-        <div class="dos">
-          <span class="dos__i">03</span>
-          <span class="dos__v">$734,000</span>
-          <span class="dos__k">Dam</span>
-          <span class="dos__note">Rosas Cantina CC &middot; NFR</span>
-        </div>
-        <div class="dos">
-          <span class="dos__i">04</span>
-          <span class="dos__v">15.1 <small style="font-size:0.42em;letter-spacing:0.08em">HH</small></span>
-          <span class="dos__k">Build</span>
-          <span class="dos__note">buckskin &middot; 6-panel N/N</span>
-        </div>
-      </div>
-    </div>
-  </aside>
+  <!-- AT A GLANCE -->
+  <div class="facts">
+    <div><span class="fact__v">$115,000</span><span class="fact__k">Earned</span></div>
+    <div><span class="fact__v">$19M</span><span class="fact__k">Sire&rsquo;s progeny</span></div>
+    <div><span class="fact__v">$734,000</span><span class="fact__k">Dam &middot; NFR qualifier</span></div>
+    <div><span class="fact__v">15.1 HH</span><span class="fact__k">Buckskin &middot; 6-panel N/N</span></div>
+  </div>
 </section>
 
 <!-- ============ THE HORSE ============ -->
 <section id="horse">
   <div class="wrap">
     <div class="titlecard prose">
-      <span class="titlecard__num" aria-hidden="true">01</span>
       <div class="tc-body">
-        <p class="eyebrow" data-idx="01">The Horse</p>
+        <p class="eyebrow">The Horse</p>
       <h2>$115,000, and he is six.</h2>
       <p class="lede">
         Started on the pattern by Lynn Kohr and campaigned by Kit McCall Johnson,
@@ -214,9 +188,8 @@
 <section id="pedigree" class="band">
   <div class="wrap">
     <div class="titlecard prose">
-      <span class="titlecard__num" aria-hidden="true">02</span>
       <div class="tc-body">
-        <p class="eyebrow" data-idx="02">Pedigree</p>
+        <p class="eyebrow">Pedigree</p>
       <h2>Speed on top. Proof on the bottom.</h2>
       <p class="lede">
         Dash Ta Fame appears twice &mdash; once behind his sire, once behind his
@@ -286,9 +259,8 @@
 
       <div class="prose">
         <div class="titlecard">
-          <span class="titlecard__num" aria-hidden="true">03</span>
           <div class="tc-body">
-            <p class="eyebrow" data-idx="03">His Dam</p>
+            <p class="eyebrow">His Dam</p>
             <h2>Rosas Cantina CC</h2>
           </div>
         </div>
@@ -335,9 +307,8 @@
     <div class="split">
       <div class="prose">
         <div class="titlecard">
-          <span class="titlecard__num" aria-hidden="true">04</span>
           <div class="tc-body">
-            <p class="eyebrow" data-idx="04">His Sire</p>
+            <p class="eyebrow">His Sire</p>
             <h2>The Goodbye Lane</h2>
           </div>
         </div>
@@ -373,12 +344,11 @@
 </section>
 
 <!-- ============ BREEDING ============ -->
-<section id="breeding">
+<section id="breeding" class="invert">
   <div class="wrap">
     <div class="titlecard prose">
-      <span class="titlecard__num" aria-hidden="true">05</span>
       <div class="tc-body">
-        <p class="eyebrow" data-idx="05">Breeding</p>
+        <p class="eyebrow">Breeding</p>
       <h2>ICSI now. Fresh and frozen by waitlist.</h2>
       <p class="lede">
         Wolverrine is <strong>ICSI only right now</strong>. He is still
@@ -394,7 +364,6 @@
 
     <div class="cards cards--3" style="margin-bottom:clamp(2.5rem,5vw,3.5rem)">
       <div class="card">
-        <span class="card__step">1</span>
         <h3>Your mare stays home</h3>
         <p>
           No hauling her to Texas, no layup bill, no missed season. A
@@ -403,7 +372,6 @@
         </p>
       </div>
       <div class="card">
-        <span class="card__step">2</span>
         <h3>The lab does the work</h3>
         <p>
           A single Wolverrine sperm is injected directly into each egg. Because
@@ -413,7 +381,6 @@
         </p>
       </div>
       <div class="card">
-        <span class="card__step">3</span>
         <h3>A recipient mare carries it</h3>
         <p>
           The embryo is transferred to a recipient mare and you get your foal
@@ -477,9 +444,8 @@
 <section id="owners" class="band">
   <div class="wrap">
     <div class="titlecard prose">
-      <span class="titlecard__num" aria-hidden="true">06</span>
       <div class="tc-body">
-        <p class="eyebrow" data-idx="06">About the Owners</p>
+        <p class="eyebrow">About the Owners</p>
       <h2>Mill Iron Livestock</h2>
       <p class="lede">
         A family ranch in Czar, Alberta, owned and operated by Del and Tyson
@@ -559,9 +525,8 @@
 <section id="gallery">
   <div class="wrap">
     <div class="titlecard prose">
-      <span class="titlecard__num" aria-hidden="true">07</span>
       <div class="tc-body">
-        <p class="eyebrow" data-idx="07">Gallery</p>
+        <p class="eyebrow">Gallery</p>
       <h2>Wolverrine</h2>
       </div>
     </div>
@@ -587,9 +552,8 @@
 <section id="inquire" class="band">
   <div class="wrap">
     <div class="titlecard prose center">
-      <span class="titlecard__num" aria-hidden="true">08</span>
       <div class="tc-body">
-        <p class="eyebrow" data-idx="08">Book a Breeding</p>
+        <p class="eyebrow">Book a Breeding</p>
       <h2>Breed to Wolverrine</h2>
       <p class="lede">
         Tell us about your mare. We&rsquo;ll send the contract, the current
