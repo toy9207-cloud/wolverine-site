@@ -365,3 +365,8 @@ section.invert .card { background:none; border-top-color: var(--gold-500); color
 .hero__single { max-width: var(--max); }
 .hero__single .lede, .hero__single .hero__sub { max-width: 62ch; }
 .card--shot { padding-top: 0; border-top: 0; }
+
+/* Nav wordmark: his own logo, keyed off the stallion ad */
+.nav__mark { display:flex; align-items:center; padding:0.4rem 0; }
+.nav__mark img { height:38px; width:auto; display:block; }
+@media (max-width:600px){ .nav__mark img { height:30px; } }

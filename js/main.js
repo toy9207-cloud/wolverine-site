@@ -62,7 +62,7 @@
   ---------------------------------------------------------------- */
   var form = document.getElementById('inquiry');
   if (form && /REPLACE_WITH_YOUR_FORM_ID/.test(form.getAttribute('action') || '')) {
-    var FALLBACK_TO = 'millironlivestock@gmail.com';
+    var FALLBACK_TO = 'stallions@soloselect.com';
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var d = new FormData(form);
