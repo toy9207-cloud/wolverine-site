@@ -366,19 +366,8 @@ section.invert .card { background:none; border-top-color: var(--gold-500); color
 .hero__single .lede, .hero__single .hero__sub { max-width: 62ch; }
 .card--shot { padding-top: 0; border-top: 0; }
 
-/* Nav lockup: his claw mark, keyed off the stallion ad, next to the name.
-   The drawn wordmark is built for light backgrounds and goes muddy at nav
-   size, so the name is set in type and the mark carries the brand. */
-.nav__mark { display:flex; align-items:center; gap:11px; padding:0.4rem 0; }
-.nav__mark img { height:34px; width:auto; display:block; }
-.nav__rule { width:1px; height:25px; background:rgba(227,187,107,0.55); transform:skewX(-28deg); }
-.nav__name {
-  font-family:var(--display); font-weight:800; font-size:1.18rem;
-  letter-spacing:0.055em; text-transform:uppercase; color:#fff; white-space:nowrap;
-}
-.nav__mark:hover .nav__name { color:var(--gold-300); }
-@media (max-width:600px){
-  .nav__mark img { height:28px; }
-  .nav__name { font-size:1rem; }
-  .nav__rule { height:21px; }
+/* Nav wordmark: set in type. The drawn logo is built for light backgrounds
+   and does not survive being keyed out and scaled to nav size. */
+.nav__mark em { font-style:normal; color:var(--gold-300); }
+.nav__mark:hover em { color:#fff; }
 }
