@@ -283,7 +283,6 @@ section.invert .card {
 /* ---------- Fee box ---------- */
 .fee { background: var(--em-900); color:#EAF0EC; border-top:4px solid var(--gold-500); padding:clamp(1.9rem,4vw,2.8rem); }
 .fee__amt { font-family:var(--display); font-weight:800; font-size:clamp(3rem,8vw,4.6rem); line-height:1; letter-spacing:-0.045em; display:block; color: var(--gold-300); }
-.fee__amt sup { font-size:0.34em; top:-1.55em; position:relative; letter-spacing:0; margin-right:0.04em; }
 .fee__per { font-size:0.66rem; letter-spacing:0.2em; text-transform:uppercase; color:rgba(255,255,255,0.6); font-weight:700; }
 .fee dl { margin:1.9rem 0 0; }
 .fee dt { font-size:0.62rem; letter-spacing:0.18em; text-transform:uppercase; font-weight:700; color:var(--gold-300); padding-top:1rem; border-top:1px solid var(--rule-dark); }
@@ -336,3 +335,120 @@ section.invert .card {
 
 .skip { position:absolute; left:-9999px; background:var(--em-900); color:#fff; padding:0.8rem 1.2rem; z-index:100; }
 .skip:focus { left:1rem; top:1rem; }
+
+/* =========================================================
+   CINEMATIC LAYER
+   Title cards, dossier panel, notched geometry, scale contrast.
+   Replaces the generic four-across stat bar.
+   ========================================================= */
+
+:root {
+  --notch: 20px;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+/* Angular notch — corners cut, never rounded */
+.notch {
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--notch)) 0,
+    100% var(--notch),
+    100% 100%,
+    var(--notch) 100%,
+    0 calc(100% - var(--notch))
+  );
+}
+
+/* ---------- Section title cards: 01 / THE HORSE ---------- */
+.titlecard { position: relative; margin-bottom: clamp(2rem, 4vw, 3.4rem); }
+.titlecard__num {
+  position: absolute; left: -0.035em; top: -0.24em;
+  font-family: var(--display); font-weight: 800;
+  font-size: clamp(5.5rem, 12vw, 10rem); line-height: 1;
+  letter-spacing: -0.06em;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(11,82,64,0.13);
+  pointer-events: none; user-select: none; z-index: 0;
+}
+section.invert .titlecard__num { -webkit-text-stroke-color: rgba(227,187,107,0.18); }
+.titlecard > .tc-body { position: relative; z-index: 1; }
+.titlecard .eyebrow { display: flex; align-items: center; gap: 0.7rem; }
+.titlecard .eyebrow::after { display: none; }
+section.invert .titlecard__num { -webkit-text-stroke-color: rgba(227,187,107,0.22); }
+
+/* ---------- Dossier: replaces the stat strip ---------- */
+.dossier {
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+  background: var(--em-900);
+  border-top: 1px solid rgba(227,187,107,0.4);
+  border-bottom: 1px solid rgba(227,187,107,0.4);
+  position: relative; overflow: hidden;
+}
+.dossier::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background:
+    repeating-linear-gradient(118deg, rgba(255,255,255,0.022) 0 2px, transparent 2px 9px);
+}
+.dossier__inner {
+  display: grid; grid-template-columns: 1fr;
+  max-width: var(--max); margin: 0 auto; padding: 0 var(--gutter);
+  position: relative; z-index: 1;
+}
+@media (min-width: 900px) { .dossier__inner { grid-template-columns: auto 1fr; gap: clamp(1.5rem,3vw,3rem); } }
+
+.dossier__rail {
+  display: none; align-items: center; justify-content: center;
+  padding: 2rem 0;
+}
+@media (min-width: 900px) { .dossier__rail { display: flex; } }
+.dossier__rail span {
+  writing-mode: vertical-rl; transform: rotate(180deg);
+  font-family: var(--mono); font-size: 0.64rem; font-weight: 700;
+  letter-spacing: 0.44em; text-transform: uppercase;
+  color: rgba(227,187,107,0.62);
+  border-left: 2px solid var(--gold-600); padding-left: 0.9rem;
+}
+
+.dossier__grid { display: grid; grid-template-columns: repeat(2, 1fr); }
+@media (min-width: 760px) { .dossier__grid { grid-template-columns: repeat(4, 1fr); } }
+
+.dos {
+  position: relative;
+  padding: clamp(1.9rem,3.6vw,2.9rem) clamp(0.9rem,1.8vw,1.5rem) clamp(1.6rem,3vw,2.4rem);
+}
+.dos + .dos::before {
+  content: ""; position: absolute; left: 0; top: 14%; bottom: 14%;
+  width: 1px; background: rgba(255,255,255,0.13);
+}
+@media (max-width: 759px) {
+  .dos:nth-child(odd)::before { display: none; }
+  .dos:nth-child(n+3)::after {
+    content:""; position:absolute; top:0; left:10%; right:10%;
+    height:1px; background: rgba(255,255,255,0.13);
+  }
+}
+.dos__i {
+  display: block; font-family: var(--mono);
+  font-size: 0.6rem; font-weight: 700; letter-spacing: 0.22em;
+  color: rgba(227,187,107,0.5); margin-bottom: 0.9rem;
+}
+.dos__v {
+  display: block; font-family: var(--display); font-weight: 800;
+  font-size: clamp(1.9rem, 4.4vw, 3.2rem); line-height: 0.92;
+  letter-spacing: -0.045em; color: var(--gold-300);
+}
+.dos__k {
+  display: block; margin-top: 0.85rem;
+  font-size: 0.6rem; font-weight: 700; letter-spacing: 0.2em;
+  text-transform: uppercase; color: rgba(255,255,255,0.5); line-height: 1.6;
+}
+.dos__note {
+  display: block; margin-top: 0.3rem;
+  font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.06em;
+  color: rgba(255,255,255,0.3);
+}
+
+/* Apply notch geometry to the panels that carry weight */
+.fee, .card { clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px)); }
+.btn { clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px)); }
+.nav__cta { clip-path: polygon(0 0, calc(100% - 9px) 0, 100% 9px, 100% 100%, 9px 100%, 0 calc(100% - 9px)); }

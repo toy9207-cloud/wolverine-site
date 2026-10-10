@@ -45,7 +45,7 @@ gold. Tokens live at the top of `css/style.css`:
 ```
 
 The page stays white; intensity comes from contrast, not from texture. Dark
-emerald bands carry the nav, the stat strip, the dam section, the fee box and
+emerald bands carry the nav, the dossier, the dam section, the fee box and
 the footer. Gold is reserved for numbers, eyebrows and the one call to action.
 Display face is Bodoni Moda — high contrast and dramatic without the condensed
 slab that reads macho. The skewed 28-degree accents under each eyebrow echo the
@@ -75,3 +75,20 @@ the inquiry form and preselect the matching option, so every lead arrives
 labelled. If Solo Select runs the waitlist on their own form, set `WAITLIST_URL`
 at the top of `js/main.js` and the two waitlist buttons repoint to it in a new
 tab — no other change needed.
+
+## Cinematic layer
+
+Three devices carry the "not another stallion site" brief, all in the block at
+the bottom of `css/style.css`:
+
+- **Dossier** (`.dossier`) replaces the four-across stat bar. A case-file panel
+  with a vertical `WOLVERRINE — FILE` rail, monospace index numbers, mono
+  sub-notes and oversized gold numerals.
+- **Title cards** (`.titlecard`) number every section 01–08 with a large
+  outlined chapter numeral set behind the heading.
+- **Notched geometry** (`.notch` and the `clip-path` rules) cuts corners on the
+  fee box, cards and buttons. Angular, never rounded.
+
+Deliberately NOT used: Marvel's marks, claw logo or color system. The horse's
+name is one letter off a registered trademark and this is commercial use, so
+the page borrows the cinematic grammar only.
