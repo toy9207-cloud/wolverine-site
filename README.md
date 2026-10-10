@@ -33,18 +33,23 @@ Export at roughly 2× the display size, then compress. Keep each file under
 
 ## Brand colors
 
-Three lines at the top of `css/style.css`:
+Sampled straight out of the stallion ad artwork — hue ~160 emerald and hue ~30
+gold. Tokens live at the top of `css/style.css`:
 
 ```css
---ink:  #211E1A;   /* soft black, never pure #000 */
---gold: #C08B4A;   /* buckskin gold — his coat */
---gold-deep: #9A6B33;
+--em-900: #04231A;   /* near-black emerald: dark bands */
+--em-700: #0B5240;
+--jade:   #3C9B7C;
+--gold-600: #A96F28;
+--gold-300: #E3BB6B;  /* numerals on dark */
 ```
 
-The palette is pulled from the horse himself — buckskin gold and black points
-on white — rather than from the logo's steel-and-black. That's what softens the
-page without going pink. Swap these to the real Mill Iron values and everything
-else follows.
+The page stays white; intensity comes from contrast, not from texture. Dark
+emerald bands carry the nav, the stat strip, the dam section, the fee box and
+the footer. Gold is reserved for numbers, eyebrows and the one call to action.
+Display face is Bodoni Moda — high contrast and dramatic without the condensed
+slab that reads macho. The skewed 28-degree accents under each eyebrow echo the
+claw slash in the logo.
 
 ## Before it goes live
 
