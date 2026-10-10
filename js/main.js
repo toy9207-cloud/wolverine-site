@@ -2,6 +2,16 @@
 (function () {
   'use strict';
 
+  /* ---- Waitlist destination ---------------------------------------
+     Wolverrine is ICSI-only while he is competing; fresh and frozen
+     contracts open as his schedule allows and are taken by waitlist.
+
+     If Solo Select runs the waitlist on their own form, put that URL
+     here and every "waitlist" button will point at it instead of the
+     on-page inquiry form. Leave it empty to use the form below.
+  ------------------------------------------------------------------ */
+  var WAITLIST_URL = '';
+
   /* ---- Image slots -------------------------------------------------
      Each .shot holds a real <img> and a labeled placeholder. Until the
      photo exists at that path, we hide the broken <img> and leave the
@@ -26,6 +36,27 @@
     }
   });
 
+  /* ---- Waitlist + ICSI buttons ----
+     Each CTA carries data-intent. Clicking one jumps to the inquiry form
+     and preselects the matching option, so the lead arrives labelled.
+  ---------------------------------------------------- */
+  var intentField = document.getElementById('intent');
+
+  document.querySelectorAll('[data-intent]').forEach(function (el) {
+    if (el.hasAttribute('data-waitlist') && WAITLIST_URL) {
+      el.setAttribute('href', WAITLIST_URL);
+      el.setAttribute('target', '_blank');
+      el.setAttribute('rel', 'noopener');
+      return;
+    }
+    el.addEventListener('click', function () {
+      if (!intentField) return;
+      intentField.value = el.getAttribute('data-intent');
+      var name = document.getElementById('name');
+      if (name) setTimeout(function () { name.focus({ preventScroll: true }); }, 600);
+    });
+  });
+
   /* ---- Current year in footer ---- */
   var yr = document.getElementById('yr');
   if (yr) yr.textContent = new Date().getFullYear();
@@ -45,12 +76,16 @@
         'Email: '  + (d.get('email')  || ''),
         'Phone: '  + (d.get('phone')  || ''),
         'Season: ' + (d.get('season') || ''),
+        'Wants: '  + (d.get('intent')  || ''),
         'Mare: '   + (d.get('mare')   || ''),
         '',
         d.get('message') || ''
       ].join('\n');
+      var subject = d.get('intent') === 'waitlist'
+        ? 'Wolverrine fresh/frozen waitlist request'
+        : 'Wolverrine breeding inquiry';
       window.location.href = 'mailto:' + FALLBACK_TO +
-        '?subject=' + encodeURIComponent('Wolverrine breeding inquiry') +
+        '?subject=' + encodeURIComponent(subject) +
         '&body=' + encodeURIComponent(body);
     });
   }

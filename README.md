@@ -65,4 +65,13 @@ Still outstanding: the as-of date for the $115,000 LTE, the 2026 Young Guns
 buckle result, a real conformation shot for the hero slot, alt text naming the
 horse in gallery images 01–03, and the Formspree form ID in `index.html`.
 
-2027 fees are live on the page: $2,000 USD ICSI, $3,500 frozen (waitlist).
+2027 fees are live on the page: $2,000 USD ICSI (available now), $3,500 fresh
+or frozen (waitlist only while he is competing).
+
+## The waitlist button
+
+Four CTAs carry `data-intent` ("icsi" or "waitlist"). By default they jump to
+the inquiry form and preselect the matching option, so every lead arrives
+labelled. If Solo Select runs the waitlist on their own form, set `WAITLIST_URL`
+at the top of `js/main.js` and the two waitlist buttons repoint to it in a new
+tab — no other change needed.

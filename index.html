@@ -36,7 +36,7 @@
       <li><a href="#owners">Owners</a></li>
       <li><a href="#gallery">Gallery</a></li>
     </ul>
-    <a class="nav__cta" href="#inquire">Breed to Wolverrine</a>
+    <a class="nav__cta" href="#inquire" data-intent="icsi">Breed to Wolverrine</a>
   </div>
 </header>
 
@@ -53,7 +53,7 @@
       <ul class="hero__meta">
         <li>$115,000 LTE</li>
         <li>Futurity Champion</li>
-        <li>ICSI &amp; Frozen/Cooled</li>
+        <li>ICSI Only &middot; Waitlist Open</li>
       </ul>
       <p class="lede">
         A $115,000 earner in his own right &mdash; which is the part most young
@@ -63,9 +63,13 @@
         ever entered and kept going.
       </p>
       <div class="btn-row">
-        <a class="btn" href="#inquire">Breed to Wolverrine</a>
-        <a class="btn btn--ghost" href="#breeding">How ICSI Works</a>
+        <a class="btn" href="#inquire" data-intent="icsi">Breed by ICSI</a>
+        <a class="btn btn--ghost" href="#inquire" data-intent="waitlist" data-waitlist>Join the Waitlist</a>
       </div>
+      <p class="fine" style="margin-top:0.9rem">
+        Fresh and frozen are waitlist only while he is showing.
+        <a href="#breeding">How ICSI works &rarr;</a>
+      </p>
 
       <!-- LOGO LOCKUP -->
       <div class="lockup">
@@ -372,12 +376,15 @@
   <div class="wrap">
     <div class="sec-head prose">
       <p class="eyebrow">Breeding</p>
-      <h2>Two ways to breed to him. Here&rsquo;s the difference.</h2>
+      <h2>ICSI now. Fresh and frozen by waitlist.</h2>
       <p class="lede">
-        For 2027: $2,000 USD by ICSI, $3,500 frozen. Frozen and cooled contracts
-        are by waitlist. If ICSI is new to you, read this before you decide
-        it&rsquo;s out of reach &mdash; for most mare owners it asks less of the
-        mare than a live cover season.
+        Wolverrine is <strong>ICSI only right now</strong>. He is still
+        competing, and a stallion who is hauling can&rsquo;t be collected on a
+        schedule, so fresh and frozen contracts open as his show calendar allows
+        &mdash; we take those by waitlist and work down it in order. ICSI is
+        $2,000 for 2027 and available today. If ICSI is new to you, read this
+        before you decide it&rsquo;s out of reach: for most mare owners it asks
+        less of the mare than a live cover season.
       </p>
     </div>
 
@@ -396,9 +403,9 @@
         <h3>The lab does the work</h3>
         <p>
           A single Wolverrine sperm is injected directly into each egg. Because
-          ICSI needs so little semen, a young stallion with a full show schedule
-          can still breed a book of mares &mdash; which is why contracts are open
-          here and the frozen/cooled list is not.
+          ICSI needs so little semen, a stallion who is still hauling can breed a
+          book of mares without coming off the road. That is exactly why ICSI is
+          open and fresh and frozen are not.
         </p>
       </div>
       <div class="card">
@@ -416,13 +423,13 @@
       <div class="fee">
         <span class="tag">2027 Season &middot; ICSI</span>
         <span class="fee__amt"><sup>$</sup>2,000</span>
-        <span class="fee__per">USD ICSI stud fee &middot; 2027</span>
+        <span class="fee__per">USD ICSI stud fee &middot; 2027 &middot; available now</span>
 
         <dl>
-          <dt>Frozen</dt>
+          <dt>Fresh &amp; frozen &mdash; waitlist</dt>
           <dd><strong>$3,500</strong> breed fee &middot; 2027.
-              Frozen and cooled contracts are by waitlist &mdash; contact Solo
-              Select to get on it.</dd>
+              Released as his competition schedule allows, in waitlist order.
+              <a href="#inquire" data-intent="waitlist" data-waitlist>Add your mare to the waitlist &rarr;</a></dd>
           <dt>Incentives</dt>
           <dd>Ruby Buckle &middot; Royal Crown &middot; Royal Crown Canada &middot;
               Young Guns League &middot; Breeders Challenge &middot;
@@ -586,7 +593,8 @@
       <h2>Breed to Wolverrine</h2>
       <p class="lede">
         Tell us about your mare. We&rsquo;ll send the contract, the current
-        incentive nominations and a straight answer on what the cycle will cost.
+        incentive nominations and a straight answer on what the cycle will cost
+        &mdash; or add you to the fresh and frozen waitlist.
       </p>
     </div>
 
@@ -615,6 +623,14 @@
             <option>Just gathering information</option>
           </select>
         </div>
+      </div>
+      <div class="field">
+        <label for="intent">What are you after?</label>
+        <select id="intent" name="intent">
+          <option value="icsi">ICSI breeding &mdash; available now, $2,000</option>
+          <option value="waitlist">Fresh or frozen waitlist &mdash; $3,500</option>
+          <option value="either">Either one, whichever opens first</option>
+        </select>
       </div>
       <div class="field">
         <label for="mare">Your mare — name and pedigree</label>
