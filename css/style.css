@@ -303,9 +303,7 @@ section.invert .card {
 
 /* ---------- Gallery ---------- */
 .gal { display:grid; gap:0.9rem; grid-template-columns:repeat(2,1fr); }
-@media (min-width:760px){ .gal{ grid-template-columns:repeat(3,1fr); gap:1.1rem; } }
-.gal .shot:first-child { grid-column:span 2; }
-@media (min-width:760px){ .gal .shot:first-child{ grid-column:span 2; grid-row:span 2; } }
+@media (min-width:760px){ .gal{ gap:1.2rem; } }
 
 /* ---------- Form ---------- */
 .form { display:grid; gap:1.1rem; }
@@ -452,3 +450,10 @@ section.invert .titlecard__num { -webkit-text-stroke-color: rgba(227,187,107,0.2
 .fee, .card { clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 14px 100%, 0 calc(100% - 14px)); }
 .btn { clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px)); }
 .nav__cta { clip-path: polygon(0 0, calc(100% - 9px) 0, 100% 9px, 100% 100%, 9px 100%, 0 calc(100% - 9px)); }
+
+/* Full-bleed conformation band under the hero */
+.band-shot { margin: clamp(2rem,5vw,3.5rem) 0 0; padding: 0; background: var(--em-900); }
+.band-shot img { width: 100%; height: auto; display: block; }
+.hero__single { max-width: var(--max); }
+.hero__single .lede, .hero__single .hero__sub { max-width: 62ch; }
+.card--shot { padding-top: 0; overflow: hidden; }

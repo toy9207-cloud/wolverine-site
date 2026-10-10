@@ -18,18 +18,21 @@ Match the name and it appears — no code changes needed.
 
 | File | Slot | Crop |
 |---|---|---|
-| `assets/images/wolverrine-hero.jpg` | Hero | vertical, 5:6 |
+| `assets/images/wolverrine-conformation.jpg` | Full-bleed band under the hero | wide, ~2.2:1 |
 | `assets/images/wolverrine-running.jpg` | The Horse | vertical, 4:5 |
-| `assets/images/rosas-cantina-cc.jpg` | His Dam | vertical, 4:5 |
-| `assets/images/the-goodbye-lane.jpg` | His Sire | vertical, 4:5 |
-| `assets/images/mill-iron-ranch.jpg` | Owners | horizontal, 16:10 |
-| `assets/images/gallery/01.jpg` … `09.jpg` | Gallery | square (01–04 filled) |
+| `assets/images/jaguarr.jpg` | Jaguarr card | vertical |
+| `assets/images/gallery/01.jpg` … `04.jpg` | Gallery | square, 2x2 |
 | `assets/images/wolverrine-og.jpg` | Social share card | 1200×630 |
 | `assets/logos/mill-iron-livestock.png` | Header lockup | transparent PNG/SVG |
 | `assets/logos/favicon.png` | Browser tab | 512×512 |
 
-Export at roughly 2× the display size, then compress. Keep each file under
+Export at roughly 2x the display size, then compress. Keep each file under
 ~400 KB.
+
+**Every slot on the page is currently filled.** The conformation band and the
+Jaguarr photo are cropped out of the two stallion ads in `assets/ads/` — they
+carry some ad artwork in the background. Replace both with clean photography
+when it is available; the filenames stay the same, so it is a drop-in.
 
 ## Brand colors
 
