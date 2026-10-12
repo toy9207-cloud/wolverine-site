@@ -10,7 +10,7 @@
      here and every "waitlist" button will point at it instead of the
      on-page inquiry form. Leave it empty to use the form below.
   ------------------------------------------------------------------ */
-  var WAITLIST_URL = '';
+  var WAITLIST_URL = 'https://www.soloselecthorses.com/stallions/wolverrine/waitlist';
 
   /* Solo Select handles contracts and payment. Anything marked data-book
      goes straight there. Keep this URL clean — no tracking parameters;
