@@ -12,6 +12,11 @@
   ------------------------------------------------------------------ */
   var WAITLIST_URL = '';
 
+  /* Solo Select handles contracts and payment. Anything marked data-book
+     goes straight there. Keep this URL clean — no tracking parameters;
+     a _gl= token is session-specific and expires. */
+  var BOOK_URL = 'https://portal.soloselect.com/portal/book/wolverrine';
+
   /* ---- Image slots -------------------------------------------------
      Each .shot holds a real <img> and a labeled placeholder. Until the
      photo exists at that path, we hide the broken <img> and leave the
@@ -36,6 +41,12 @@
      and preselects the matching option, so the lead arrives labelled.
   ---------------------------------------------------- */
   var intentField = document.getElementById('intent');
+
+  document.querySelectorAll('[data-book]').forEach(function (el) {
+    el.setAttribute('href', BOOK_URL);
+    el.setAttribute('target', '_blank');
+    el.setAttribute('rel', 'noopener');
+  });
 
   document.querySelectorAll('[data-intent]').forEach(function (el) {
     if (el.hasAttribute('data-waitlist') && WAITLIST_URL) {
