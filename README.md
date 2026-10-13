@@ -23,8 +23,28 @@ Match the name and it appears — no code changes needed.
 | `assets/images/jaguarr.jpg` | Jaguarr card | vertical |
 | `assets/images/gallery/01.jpg` … `04.jpg` | Gallery | square, 2x2 |
 | `assets/images/wolverrine-og.jpg` | Social share card | 1200×630 |
-| `assets/logos/mill-iron-livestock.png` | Header lockup | transparent PNG/SVG |
 | `assets/logos/favicon.png` | Browser tab | 512×512 |
+
+## Logos
+
+Wolverrine's own wordmark ships in five colorways, all 1062×88 transparent PNG,
+from Taylor Gazda's official package: `wordmark-emerald-dark.png` (hero),
+`wordmark-gold.png` (nav and footer, on dark), plus `-emerald`, `-olive` and
+`-black`. Ask Taylor for the `.ai`/`.eps` if a vector is ever needed for print.
+
+Mill Iron Livestock's two marks were keyed off white from the JPGs Chelsea
+supplied, black and white variants of each:
+
+| File | Where it runs |
+|---|---|
+| `mill-iron-livestock.png` | Hero lockup, Owners section heading |
+| `mill-iron-livestock-white.png` | Footer, Owner column |
+| `mill-iron-brand.png` | unused — black variant, held for future use |
+| `mill-iron-brand-white.png` | Footer, above the wordmark |
+
+The brand iron is a 1:4.9 vertical. Below roughly 90px tall it stops reading as
+a brand and starts reading as a stray glyph, so do not shrink `.foot__brand`
+past its current 104px.
 
 Export at roughly 2x the display size, then compress. Keep each file under
 ~400 KB.
