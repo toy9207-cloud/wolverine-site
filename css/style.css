@@ -391,3 +391,11 @@ section.invert .card { background:none; border-top-color: var(--gold-500); color
 .nav__cta { white-space: nowrap; padding: 0.6rem 1.05rem; }
 .nav__links + .nav__cta { margin-left: 1.15rem; }
 @media (max-width: 1100px) { .nav__links { display: none; } }
+
+/* Mill Iron marks */
+.ownermark { margin: 0 0 0.6em; }
+.ownermark img { width: min(100%, 360px); height: auto; display: block; }
+.foot__brand { height: 104px; width: auto; display: block; margin: 0 0 0.75rem; opacity: 0.9; }
+.foot__logo { width: min(100%, 182px); height: auto; margin: 0 0 1rem; opacity: 0.92; }
+.jagg { margin-top: clamp(2.5rem, 5vw, 3.5rem); }
+.jagg .shot--wide { aspect-ratio: 4 / 3; }
