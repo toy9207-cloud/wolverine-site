@@ -371,3 +371,23 @@ section.invert .card { background:none; border-top-color: var(--gold-500); color
 .nav__mark em { font-style:normal; color:var(--gold-300); }
 .nav__mark:hover em { color:#fff; }
 }
+
+/* ---------------------------------------------------------
+   Official wordmark. 12:1, so it is sized by width, not height.
+   Gold on the dark bands, near-black emerald on white.
+   --------------------------------------------------------- */
+.nav__mark img { width: clamp(124px, 13vw, 168px); height: auto; display: block; }
+.nav__mark:hover img { opacity: 0.82; }
+
+.hero__logo { margin: 0 0 0.9rem; line-height: 0; }
+.hero__logo img { width: min(100%, 780px); height: auto; display: block; }
+
+.foot__mark { line-height: 0; margin: 0 0 1.1rem; }
+.foot__mark img { width: min(100%, 230px); height: auto; display: block; }
+
+/* Keep the bar on one line now the wordmark takes real estate */
+.nav__links { gap: 1.15rem; }
+.nav__links a { white-space: nowrap; }
+.nav__cta { white-space: nowrap; padding: 0.6rem 1.05rem; }
+.nav__links + .nav__cta { margin-left: 1.15rem; }
+@media (max-width: 1100px) { .nav__links { display: none; } }
