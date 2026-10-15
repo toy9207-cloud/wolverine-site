@@ -74,3 +74,28 @@ filled in — it is the one SEO hole left in the gallery.
 
 Images of Rosa or The Goodbye Lane still need permission from their
 photographers.
+
+## Pending: Solo Select Stallion Incentive
+
+Copy is written and held, not published. The patch is in
+`docs/pending/solo-select-incentive.patch` — `git apply` it once both questions
+below are answered.
+
+It splits the incentive block into "Barrel incentives" (the existing eight) and
+"Roping incentive," and adds a paragraph arguing the roping nomination as a
+second market for a barrel-bred colt rather than another line in a list.
+
+Two things gate it:
+
+1. **Is he actually nominated?** The last word on record is the owners' text
+   saying they were interested and wanted a contract to read. That is interest,
+   not enrollment. Solo's public incentive stallion list does not show him, but
+   that list dates to 2025 and proves nothing either way. Every stallion on it is
+   a rope or cow horse sire, which is reason to confirm rather than assume.
+2. **Exact program name.** Solo's own announcement calls it the Solo Select
+   Stallion Incentive. The Team Roping Journal headline calls it the Solo
+   Stallion Incentive. The patch uses Solo's version.
+
+This is an eligibility claim mare owners spend money against. It does not go on
+the site, the stallion ad or the social graphics until someone at Solo Select or
+Mill Iron confirms it in writing.

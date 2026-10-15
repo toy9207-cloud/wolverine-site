@@ -1,0 +1,49 @@
+diff --git a/index.html b/index.html
+index dd84549..ac1e614 100644
+--- a/index.html
++++ b/index.html
+@@ -427,11 +427,20 @@
+           <dd><strong>$3,500</strong> breed fee &middot; 2027.
+               Released as his competition schedule allows, in waitlist order.
+               <a href="#inquire" data-intent="waitlist" data-waitlist>Add your mare to the waitlist &rarr;</a></dd>
+-          <dt>Incentives</dt>
++          <dt>Barrel incentives</dt>
+           <dd>Ruby Buckle &middot; Royal Crown &middot; Royal Crown Canada &middot;
+               Young Guns League &middot; Breeders Challenge &middot;
+               Tomorrow&rsquo;s Legends &middot; Gold Rush &middot;
+               The Breeders Elite Incentive</dd>
++          <!-- VERIFY BEFORE PUBLISH: confirm (1) Wolverrine is actually nominated,
++               not just under consideration — the last word from the owners was that
++               they were interested and wanted to read a contract; and (2) the exact
++               program name. Solo's own post calls it the Solo Select Stallion
++               Incentive; the Team Roping Journal headline calls it the Solo Stallion
++               Incentive. The public stallion list does not show him, but that list
++               dates to 2025. -->
++          <dt>Roping incentive</dt>
++          <dd>Solo Select Stallion Incentive</dd>
+           <!-- Eight programs, from the badge column on the current stallion ad.
+                The Diamond Classic is defunct and is deliberately not listed. -->
+           <dt>Standing at</dt>
+@@ -450,12 +459,20 @@
+       <div class="prose">
+         <h3>What the nominations are worth</h3>
+         <p>
+-          Wolverrine is nominated to eight incentive programs. Between them they
+-          pay out millions of dollars in barrel racing, and a foal of his is
++          Wolverrine is nominated to eight barrel racing incentive programs.
++          Between them they pay out millions of dollars, and a foal of his is
+           eligible to run for it on top of whatever the open pays. That pool only
+           widens from here &mdash; his first full crops are just now reaching the
+           ground, and the nominations keep expanding as new programs open.
+         </p>
++        <p>
++          He is also nominated to the <strong>Solo Select Stallion Incentive</strong>,
++          which is a roping program. That is an unusual place to find a barrel-bred
++          stallion, and it is the point: a Wolverrine foal that goes down the rope
++          horse road has futurity money to run for as well, and you are not selling
++          him into one market. Solo Select&rsquo;s incentive paid out more than
++          $580,000 across its first roping futurities.
++        </p>
+ 
+         <h3 style="margin-top:2rem">What you should ask us</h3>
+         <p>
