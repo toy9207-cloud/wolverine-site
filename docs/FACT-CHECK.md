@@ -75,27 +75,19 @@ filled in — it is the one SEO hole left in the gallery.
 Images of Rosa or The Goodbye Lane still need permission from their
 photographers.
 
-## Pending: Solo Select Stallion Incentive
 
-Copy is written and held, not published. The patch is in
-`docs/pending/solo-select-incentive.patch` — `git apply` it once both questions
-below are answered.
+## Solo Select Roping Incentive — confirmed
 
-It splits the incentive block into "Barrel incentives" (the existing eight) and
-"Roping incentive," and adds a paragraph arguing the roping nomination as a
-second market for a barrel-bred colt rather than another line in a list.
+Confirmed by Chelsea as Wolverrine's stallion manager on Oct. 15, 2026. He is
+nominated. The site lists it under "Roping incentive" and argues it in the
+nominations copy as a second market for a barrel-bred colt.
 
-Two things gate it:
+Named the Solo Select Roping Incentive, per the stallion manager. Solo's own
+2025 announcement post used "Solo Select Stallion Incentive" when the program was
+roping-only; it has since expanded to cutting and reined cow horse, so the roping
+arm carries its own name. If Solo's published materials disagree, theirs wins —
+but the claim itself is confirmed.
 
-1. **Is he actually nominated?** The last word on record is the owners' text
-   saying they were interested and wanted a contract to read. That is interest,
-   not enrollment. Solo's public incentive stallion list does not show him, but
-   that list dates to 2025 and proves nothing either way. Every stallion on it is
-   a rope or cow horse sire, which is reason to confirm rather than assume.
-2. **Exact program name.** Solo's own announcement calls it the Solo Select
-   Stallion Incentive. The Team Roping Journal headline calls it the Solo
-   Stallion Incentive. The patch uses Solo's version.
-
-This is an eligibility claim mare owners spend money against. It does not go on
-the site, the stallion ad or the social graphics until someone at Solo Select or
-Mill Iron confirms it in writing.
+The $580,000 payout figure is from Solo Select's first roping futurities as
+reported in trade coverage. Swap in Solo's own current number when they publish
+one.
