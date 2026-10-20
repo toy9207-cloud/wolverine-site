@@ -91,3 +91,27 @@ but the claim itself is confirmed.
 The $580,000 payout figure is from Solo Select's first roping futurities as
 reported in trade coverage. Swap in Solo's own current number when they publish
 one.
+
+
+## Earnings — $137,590 as of October 2026
+
+Confirmed by the stallion manager Oct. 20, 2026.
+
+| Event | Amount |
+|---|---|
+| March Into Spring Fling Futurity (2025) | $7,362 |
+| Young Guns League Derby (2026) | $16,400 |
+| Pink Buckle, open (2026) | $6,190 |
+| **Lifetime** | **$137,590** |
+
+The $6,190 is derived, not quoted: the stallion manager gave $22,590 as the
+Young Guns and Pink Buckle open combined, and $16,400 was already on record for
+the derby. If Solo Select or EquiStat publishes the Pink Buckle open figure on
+its own, check it against this before the next update.
+
+The figure now carries an as-of date in the body copy, the record and the hero
+meta line, because it moved twice during the build. The share card at
+`assets/images/wolverrine-og.jpg` carries the number as pixels and was patched
+in place to match — it is not regenerated from a script, so any future change
+has to be made to the image too, or the share preview will disagree with the
+page.
