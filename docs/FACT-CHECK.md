@@ -115,3 +115,26 @@ meta line, because it moved twice during the build. The share card at
 in place to match — it is not regenerated from a script, so any future change
 has to be made to the image too, or the share preview will disagree with the
 page.
+
+
+## Photo aspect ratios
+
+Two images were being cropped by their containers. A crop audit over the
+rendered page (compare each image's natural aspect to its box's, under
+`object-fit: cover`) caught both:
+
+| File | Source | Was | Lost | Now |
+|---|---|---|---|---|
+| `jaguarr.jpg` | 492x1000 portrait | 4:3 box | 63% | 4:5, anchored top |
+| `wolverrine-conformation.jpg` | 1800x1667 | 16:10 box | 33% | 3:2, `object-position: center 80%` |
+
+Jaguarr's frame is a tall crop off his stallion ad and will not survive a
+landscape box. Anchoring to the top takes the remaining crop off his chest
+instead of his head, and the Owners split is now sized to the picture (320px)
+so the shorter text beside it does not leave a gap.
+
+The conformation shot still loses 28%, but all of it is sky — the horse is
+framed ears to feet with even margins. This is the one photo whose job is the
+whole horse, so it should never be cropped to a wide band again.
+
+Run the audit after any layout change that moves a photo between slots.

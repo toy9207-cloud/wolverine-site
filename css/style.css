@@ -398,4 +398,17 @@ section.invert .card { background:none; border-top-color: var(--gold-500); color
 .foot__brand { height: 104px; width: auto; display: block; margin: 0 0 0.75rem; opacity: 0.9; }
 .foot__logo { width: min(100%, 182px); height: auto; margin: 0 0 1rem; opacity: 0.92; }
 .jagg { margin-top: clamp(2.5rem, 5vw, 3.5rem); }
-.jagg .shot--wide { aspect-ratio: 4 / 3; }
+/* Jaguarr's frame is a 492x1000 portrait cropped out of his stallion ad. A
+   landscape box threw away about two thirds of it. Portrait matches the rest of
+   the site's photo slots, and anchoring to the top takes the crop off his chest
+   rather than his head. The column is sized to the picture so the shorter text
+   beside it does not leave a gap. */
+.split.jagg .shot { aspect-ratio: 4 / 5; }
+.split.jagg .shot img { object-position: center top; }
+@media (min-width: 900px) { .split.jagg { grid-template-columns: 320px 1fr; } }
+
+/* The conformation shot is the one photo whose job is the whole horse. At 16:10
+   the crop took his feet. A 3:2 box dropped low keeps him framed top to bottom
+   and takes the loss out of the sky. */
+.conformation { aspect-ratio: 3 / 2; }
+.conformation img { object-position: center 80%; }
