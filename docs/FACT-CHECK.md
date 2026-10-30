@@ -63,14 +63,17 @@ Futurity Champion, 2025 Diamond Classic Reserve Champion); Im On Firre $37,950
 
 ## Photo notes
 
-The LexiSmith Media watermark on gallery images 01–03 reads "SOCIAL MEDIA USE
-ONLY" and is legible at full size on the page. Rights are cleared, but the
-visible stamp still reads as unlicensed to anyone who looks. Ask LexiSmith for
-clean web-res files, or crop below the watermark.
+Mostly resolved by the 2026 studio and pen photography (see below). Gallery 01,
+02 and 03 are now clean professional frames. Gallery 04 still carries the
+LexiSmith Media "SOCIAL MEDIA USE ONLY" stamp, legible at full size. Rights are
+cleared and the caption credits LexiSmith, but the visible stamp still reads as
+unlicensed to anyone who looks. Ask LexiSmith for a clean web-res file, or crop
+below the watermark.
 
-Images 01–03 show a dark-coated horse and Wolverrine is a buckskin, so their alt
-text does not name him. Identify the horse and rider and the alt text can be
-filled in — it is the one SEO hole left in the gallery.
+The old note here doubted whether the dark-coated horse in those frames was
+Wolverrine, a buckskin. The 2026 photographs settle it: he photographs as a dark
+smoky buckskin with a small star, and the tooled halter in the studio frames
+reads WOLVERRINE.
 
 Images of Rosa or The Goodbye Lane still need permission from their
 photographers.
@@ -138,3 +141,33 @@ framed ears to feet with even margins. This is the one photo whose job is the
 whole horse, so it should never be cropped to a wide band again.
 
 Run the audit after any layout change that moves a photo between slots.
+
+
+## 2026 photography
+
+Five professional frames pulled from the client's Drive folder on Oct. 30, 2026.
+Originals are in `assets/source/2026-drive/` at full resolution; the web
+derivatives are built from them, so a slot can be recropped without going back
+to Drive.
+
+| Source | Pixels | Where it runs now |
+|---|---|---|
+| `wolverrine-23.jpg` | 4384x3221 | Hero band |
+| `wolverine_2024-4.jpg` | 5355x7140 | Conformation figure, gallery 01 |
+| `wolverine_2024-7.jpg` | 5464x7285 | Gallery 02 |
+| `wolverrine-2.jpg` | 3392x5088 | Gallery 03 |
+| `wolverine_2024-5.jpg` | 7285x5464 | unused — landscape head and neck |
+
+The hero band is anchored at 12% from the top: the band is 1.88 wide against a
+1.36 source, and a centred crop takes his ears off.
+
+The conformation figure is the big win. It replaces a pasture snapshot that was
+losing 28% of its height to a wide box, with a studio frame that is natively 3:4
+— so the 4:5 slot crops almost nothing and he is framed ears to feet.
+
+`RWM_1833.JPG` in the same folder is 16 MB and over the Drive API download
+limit, so it has not been seen. If it is the photographer's master of one of
+these, it is the one to use for print.
+
+Photographer is still unidentified for all five. Credit before any of these are
+used in an ad.

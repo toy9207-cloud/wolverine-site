@@ -407,8 +407,8 @@ section.invert .card { background:none; border-top-color: var(--gold-500); color
 .split.jagg .shot img { object-position: center top; }
 @media (min-width: 900px) { .split.jagg { grid-template-columns: 320px 1fr; } }
 
-/* The conformation shot is the one photo whose job is the whole horse. At 16:10
-   the crop took his feet. A 3:2 box dropped low keeps him framed top to bottom
-   and takes the loss out of the sky. */
-.conformation { aspect-ratio: 3 / 2; }
-.conformation img { object-position: center 80%; }
+/* The conformation shot is the one photo whose job is the whole horse. The 2026
+   studio frame is natively 3:4, so a 4:5 box costs almost nothing and he is
+   framed ears to feet with no crop tricks. Capped, because a full-width portrait
+   at this ratio would run past a laptop screen on its own. */
+.conformation { aspect-ratio: 4 / 5; max-width: 560px; }
