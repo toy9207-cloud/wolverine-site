@@ -296,6 +296,13 @@ section.invert .card { background:none; border-top-color: var(--gold-500); color
 /* ---------- Gallery ---------- */
 .gal { display:grid; gap:0.9rem; grid-template-columns:repeat(2,1fr); }
 @media (min-width:760px){ .gal{ grid-template-columns:repeat(3,1fr); gap:1.2rem; } }
+/* One tile runs at 2x2 so the grid is not nine identical squares. The maths
+   tiles exactly at both widths — 4 cells for the big tile plus 8 singles is 12,
+   which is 4 rows of three and 6 rows of two — so there are no dead cells and
+   no need for grid-auto-flow: dense, which would reshuffle the running order.
+   The tile stays 1:1: at double width it spans two rows plus the gap, which is
+   its own height. No recrop. */
+.shot--big { grid-column: span 2; grid-row: span 2; }
 
 /* ---------- Form ---------- */
 .form { display:grid; gap:1.1rem; }
