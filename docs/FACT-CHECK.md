@@ -171,3 +171,33 @@ these, it is the one to use for print.
 
 Photographer is still unidentified for all five. Credit before any of these are
 used in an ad.
+
+
+## Ground-handling photography, Oct. 29, 2026
+
+Four frames from the client's own shoot, supplied through chat at 2000x1333
+(3:2). Originals are in `assets/source/2026-ground/`. These are chat-downscaled,
+not camera masters — the full-resolution files are in a local folder on her Mac,
+`38 Mill Iron Wolverrine/New Wolverrine`, named MCS_4365 through MCS_5180. That
+folder is not synced to Drive. Get the masters before any of these is used in
+print or a full-bleed hero.
+
+| File | Where it runs |
+|---|---|
+| `ground-23.jpg` | The Horse — ground band under the disposition copy |
+| `ground-21.jpg` | Gallery 07 |
+| `ground-22.jpg` | Gallery 08 |
+| `ground-24.jpg` | Gallery 09 |
+
+Two things are deliberately not claimed: the handler is not named, and no
+photographer is credited. Neither was supplied. The caption and alt text
+describe what is in the frame and nothing more. There is a TODO in the markup.
+
+The halter in these frames carries a Solo Select Horses plate. That is not used
+to assert where the photographs were taken.
+
+Placement rationale: the brief from the start was to soften a deliberately
+masculine logo because he is a girl's horse, and the copy in The Horse argues
+that his disposition is the half of him an earnings line cannot show. Nothing on
+the site demonstrated that until now. A stallion standing square on a slack lead
+is the evidence for the paragraph it sits under.
